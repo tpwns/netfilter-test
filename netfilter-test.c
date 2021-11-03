@@ -202,7 +202,7 @@ int main(int argc, char **argv)
 
 	for (;;) {
 		if ((rv = recv(fd, buf, sizeof(buf), 0)) >= 0) {
-			printf("pkt received\n");
+			//printf("pkt received\n");
 			nfq_handle_packet(h, buf, rv);
 			continue;
 		}
